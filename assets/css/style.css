@@ -190,7 +190,7 @@ div.info {
     font-weight: 600;
 }
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 500px) { 
     header p{
         width: 35%;
         font-size: 25px;
