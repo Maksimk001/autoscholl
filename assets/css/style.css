@@ -168,9 +168,9 @@ div.top {
     border: #000 solid 2px;
     position: fixed;
     right: 18px;
-    bottom: 18px;
+    bottom: -200px;
     border-radius: 50%;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 div.top:hover {
     transform: scale(1.1);
@@ -189,8 +189,23 @@ div.info {
     font-size: 15px;
     font-weight: 600;
 }
-@media screen and (max-width: 576px) {
+
+@media screen and (max-width: 700px) { 
+    header p{
+        width: 35%;
+        font-size: 25px;
+        text-align: center;
+    }
     section.cartAll {
+        width: 100vw;
+        height: auto;
+    } 
+    div.info {
+        width: 310px;
+        height: auto;
+        text-align: center;
+    }
+}
         margin: 0 auto;
         width: 100vw;
     }
