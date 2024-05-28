@@ -193,6 +193,7 @@ div.info {
     section.cartAll {
         width: 100vw;
         justofy-content: space-between;
+        background-color: black;
     }
     header p {
         width: 100%;
