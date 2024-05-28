@@ -192,6 +192,7 @@ div.info {
 @media screen and (max-width: 576px) {
     section.cartAll {
         width: 100vw;
+        justofy-content: space-between;
     }
     header p {
         width: 100%;
