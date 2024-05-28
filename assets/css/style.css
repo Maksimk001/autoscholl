@@ -189,7 +189,7 @@ div.info {
     font-size: 15px;
     font-weight: 600;
 }
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 576px) {
     section.cartAll {
         width: 100vw;
     }
