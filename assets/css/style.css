@@ -190,7 +190,7 @@ div.info {
     font-weight: 600;
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 410px) { 
     header p{
         width: 35%;
         font-size: 25px;
@@ -199,14 +199,15 @@ div.info {
     section.cartAll {
         width: 100vw;
         height: auto;
+        margin: none;
+        justify-content: space-between;
     } 
+    section.cartAll div.cart {
+        width: 180px;
+    }
     div.info {
         width: 310px;
         height: auto;
         text-align: center;
-    }
-}
-        margin: 0 auto;
-        width: 100vw;
     }
 }
