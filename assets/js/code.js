@@ -1,3 +1,4 @@
+
 let fotocar = document.querySelectorAll('div#foto')
 let namess = document.querySelectorAll('div#name')
 let car = document.querySelectorAll('div#car')
@@ -41,4 +42,25 @@ const position = document.addEventListener('scroll', () => {
     }
 })
 
+
+// вход
+
+let sing = false
+let input = document.querySelectorAll('div.d1 input')
+let singin = document.querySelector('button.singin')
+let error = document.querySelector('p.error')
+
+singin.onclick = function () {
+    login()
+}
+function login() {
+    if (input[0].value == 'Maksimk' && input[1].value == '1465') {
+        sing = true
+        document.location = 'http://127.0.0.1:5500/cart.html'
+    }
+    else {
+        sing = false
+        error.style.opacity = 1
+    }
+}
 
