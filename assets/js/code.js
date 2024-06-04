@@ -56,7 +56,7 @@ singin.onclick = function () {
 function login() {
     if (input[0].value == 'Maksimk' && input[1].value == '1465') {
         sing = true
-        document.location = 'http://127.0.0.1:5500/cart.html'
+        document.location = 'https://maksimk001.github.io/autoscholl/cart.html'
     }
     else {
         sing = false
