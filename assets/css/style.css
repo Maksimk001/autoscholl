@@ -108,6 +108,7 @@ section.cartAll {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 section.cartAll div.cart {
     width: 190px;
@@ -145,7 +146,11 @@ section.cartAll div.cart div.number {
     font-size: 15px;
     font-weight: 600;
 }
-
+section.cartAll div.cart div.type {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(85, 161, 4);
+}
 header {
     margin: 0 auto;
     width: 100vw;
@@ -196,10 +201,143 @@ div.info {
     font-weight: 600;
 }
 
-@media screen and (max-width: 365px) { 
+/* lk */
+div.blocklk {
+    width: 100vw;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.accaunt {
+    width: 700px;
+    background-color: #e3e3e3;
+    height: 300px;
+    display: flex;
+    border: #000 ridge 2px;
+    margin-top: 30px;
+}
+div.accaunt div.d2 h1 {
+    font-size: 27px;
+    border-bottom: #000 solid 2px;
+    width: 110px;
+}
+div.accaunt div.foto {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.accaunt div.foto img {
+    width: 80%;
+    height: 83%;
+    border: #000 solid 2px;
+}
+div.accaunt div.d2 {
+    width: 60%;
+    height: 280px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    justify-content: center;
+}
+div.accaunt div.d2 div {
+    padding: 3px 0;
+}
+div.infoacc {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div.pay {
+    width: 700px;
+    min-height: 300px;
+    height: auto;
+    border: #000 ridge 2px;   
+    background-color: #e3e3e3;
+    margin-top: 30px;
+}
+div.pay h1 {
+    font-size: 27px;
+    margin: 5px 0 0 10px;
+}
+div.pay table {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 75%;
+    margin: 5px 0 0 5px;
+}
+div.pay thead th {
+    background-color: #bfbdbc;
+}
+div.pay thead th:nth-child(1) {
+    width: 9%;
+    height: 40px;
+    border: #000 solid 1px;
+}
+div.pay thead th:nth-child(2) {
+    width: 5%;
+    height: 40px;
+    border: #000 solid 1px;
+}
+div.pay thead th:nth-child(3) {
+    width: 5%;
+    height: 40px;
+    border: #000 solid 1px;
+}
+div.pay thead th:nth-child(4) {
+    width: 18%;
+    height: 40px;
+    border: #000 solid 1px;
+}
+div.pay thead th:nth-child(5) {
+    width: 10%;
+    height: 40px;
+    border: #000 solid 1px;
+}
+div.pay tbody td {
+    width: auto;
+    height: 40px;
+    border: #000 solid 1px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 394px) { 
     header p{
-        width: 35%;
-        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 28%;
+        font-size: 20px;
         text-align: center;
     }
     section.cartAll {
@@ -209,7 +347,11 @@ div.info {
         justify-content: space-around;
     } 
     section.cartAll div.cart {
-        width: 180px;
+        width: 150px;
+    }
+    section.cartAll div.cart div.img{
+        width: 120px;
+        height: 120px;
     }
     div.info {
         width: 310px;
@@ -222,5 +364,58 @@ div.info {
     }
     section.tell div.block {
         margin: 20px;
+    }
+    div.accaunt {
+        flex-direction: column;
+        min-height: 500px;
+        width: 340px;
+    }
+    div.accaunt h1 {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    div.accaunt div.foto {
+        width: 100%;
+    }
+    div.accaunt div.d2 {
+        width: 100%;
+        padding-left: 10px;
+    }
+    div.pay {
+        width: 340px;
+    }
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    div.pay thead th {
+        background-color: #bfbdbc;
+    }
+    div.pay thead th:nth-child(1) {
+        width: 100%;
+        height: 40px;
+        border: #000 solid 1px;
+    }
+    div.pay thead th:nth-child(2) {
+        width: 100%;
+        height: 40px;
+        border: #000 solid 1px;
+    }
+    div.pay thead th:nth-child(3) {
+        width: 100%;
+        height: 40px;
+        border: #000 solid 1px;
+    }
+    div.pay thead th:nth-child(4) {
+        width: 100%;
+        height: 40px;
+        border: #000 solid 1px;
+    }
+    div.pay thead th:nth-child(5) {
+        width: 100%;
+        height: 40px;
+        border: #000 solid 1px;
     }
 }
